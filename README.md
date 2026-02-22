@@ -10,7 +10,7 @@ Either create a `virtualenv` and install directly via `pip`, or use `uv`.
 If you are planning to modify the `REC` code, it would be useful to do an editable install.
 
 ```shell
-git clone git@gitlab.uni-marburg.de:fb12/ag-freisleben/projects/resilient-edge-computing.git
+git clone git@github.com:Sinafadavi-uni/ma-sinafadavi-Iran.git
 
 cd resilient-edge-computing
 
@@ -30,7 +30,7 @@ Install the [Go programming language](https://go.dev/)
 Clone and build `dtnd`
 
 ```shell
-git clone git@gitlab.uni-marburg.de:fb12/ag-freisleben/projects/dtn7-go.git
+git clone git@github.com:dtn7/dtn7-go.git
 
 cd dtn7-go
 
