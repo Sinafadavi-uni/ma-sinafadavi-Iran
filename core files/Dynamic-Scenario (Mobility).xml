@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<scenario>
+  <networks>
+    <network id="1" name="wlan1" icon="" canvas="1" type="WIRELESS_LAN">
+      <position x="807.0" y="64.0" lat="47.57858467090369" lon="-122.12145011223572" alt="2.0"/>
+    </network>
+  </networks>
+  <devices>
+    <device id="2" name="B1" icon="" canvas="1" type="mdr" class="" image="" compose="" compose_name="">
+      <position x="86.0" y="204.0" lat="47.57731208894736" lon="-122.13116539203348" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv3MDR"/>
+        <service name="RECBroker"/>
+        <service name="IPForward"/>
+        <service name="DTN7GO"/>
+      </services>
+    </device>
+    <device id="3" name="B2" icon="" canvas="1" type="mdr" class="" image="" compose="" compose_name="">
+      <position x="484.0" y="248.0" lat="47.576912128230184" lon="-122.12580244978727" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv3MDR"/>
+        <service name="RECBroker"/>
+        <service name="IPForward"/>
+        <service name="DTN7GO"/>
+      </services>
+    </device>
+    <device id="4" name="B3" icon="" canvas="1" type="mdr" class="" image="" compose="" compose_name="">
+      <position x="268.0" y="220.0" lat="47.57716664904005" lon="-122.12871299130781" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv3MDR"/>
+        <service name="RECBroker"/>
+        <service name="IPForward"/>
+        <service name="DTN7GO"/>
+      </services>
+    </device>
+    <device id="5" name="D1" icon="" canvas="1" type="mdr" class="" image="" compose="" compose_name="">
+      <position x="300.0" y="450.0" lat="47.575075905728745" lon="-122.12828179997145" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv3MDR"/>
+        <service name="IPForward"/>
+        <service name="DTN7GO"/>
+        <service name="RECDatastore"/>
+      </services>
+    </device>
+    <device id="6" name="D2" icon="" canvas="1" type="mdr" class="" image="" compose="" compose_name="">
+      <position x="450.0" y="450.0" lat="47.575075905728745" lon="-122.12626059058216" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv3MDR"/>
+        <service name="IPForward"/>
+        <service name="DTN7GO"/>
+        <service name="RECDatastore"/>
+      </services>
+    </device>
+    <device id="7" name="D3" icon="" canvas="1" type="mdr" class="" image="" compose="" compose_name="">
+      <position x="600.0" y="450.0" lat="47.575075905728745" lon="-122.1242393811929" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv3MDR"/>
+        <service name="IPForward"/>
+        <service name="DTN7GO"/>
+        <service name="RECDatastore"/>
+      </services>
+    </device>
+    <device id="8" name="D4" icon="" canvas="1" type="mdr" class="" image="" compose="" compose_name="">
+      <position x="650.0" y="450.0" lat="47.575075905728745" lon="-122.12356564472982" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv3MDR"/>
+        <service name="IPForward"/>
+        <service name="DTN7GO"/>
+        <service name="RECDatastore"/>
+      </services>
+    </device>
+    <device id="9" name="D5" icon="" canvas="1" type="mdr" class="" image="" compose="" compose_name="">
+      <position x="400.0" y="150.0" lat="47.57780294565193" lon="-122.12693432704526" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv3MDR"/>
+        <service name="IPForward"/>
+        <service name="DTN7GO"/>
+        <service name="RECDatastore"/>
+      </services>
+    </device>
+    <device id="10" name="Cl" icon="" canvas="1" type="mdr" class="" image="" compose="" compose_name="">
+      <position x="478.0" y="416.0" lat="47.57538497738946" lon="-122.12588329816285" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv3MDR"/>
+        <service name="RECClient"/>
+        <service name="IPForward"/>
+        <service name="DTN7GO"/>
+      </services>
+    </device>
+  </devices>
+  <links>
+    <link node1="2" node2="1">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:00" ip4="10.0.0.1" ip4_mask="32" ip6="2001::1" ip6_mask="128"/>
+    </link>
+    <link node1="3" node2="1">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:01" ip4="10.0.0.2" ip4_mask="32" ip6="2001::2" ip6_mask="128"/>
+    </link>
+    <link node1="4" node2="1">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:02" ip4="10.0.0.3" ip4_mask="32" ip6="2001::3" ip6_mask="128"/>
+    </link>
+    <link node1="6" node2="1">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:03" ip4="10.0.0.4" ip4_mask="32" ip6="2001::4" ip6_mask="128"/>
+    </link>
+    <link node1="5" node2="1">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:04" ip4="10.0.0.5" ip4_mask="32" ip6="2001::5" ip6_mask="128"/>
+    </link>
+    <link node1="7" node2="1">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:05" ip4="10.0.0.6" ip4_mask="32" ip6="2001::6" ip6_mask="128"/>
+    </link>
+    <link node1="8" node2="1">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:06" ip4="10.0.0.7" ip4_mask="32" ip6="2001::7" ip6_mask="128"/>
+    </link>
+    <link node1="9" node2="1">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:07" ip4="10.0.0.8" ip4_mask="32" ip6="2001::8" ip6_mask="128"/>
+    </link>
+    <link node1="10" node2="1">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:08" ip4="10.0.0.9" ip4_mask="32" ip6="2001::9" ip6_mask="128"/>
+    </link>
+  </links>
+  <mobility_configurations>
+    <mobility_configuration node="1" model="basic_range">
+      <configuration name="range" value="275"/>
+      <configuration name="bandwidth" value="54000000"/>
+      <configuration name="jitter" value="0"/>
+      <configuration name="delay" value="20000"/>
+      <configuration name="error" value="0.0"/>
+      <configuration name="promiscuous" value="0"/>
+    </mobility_configuration>
+    <mobility_configuration node="1" model="ns2script">
+      <configuration name="file" value="/home/sina/Desktop/Related Work/New-Pr-UCP/sina-fadavi-evaluation/rec_mobility.txt"/>
+      <configuration name="refresh_ms" value="50"/>
+      <configuration name="loop" value="1"/>
+      <configuration name="autostart" value=""/>
+      <configuration name="map" value=""/>
+      <configuration name="script_start" value=""/>
+      <configuration name="script_pause" value=""/>
+      <configuration name="script_stop" value=""/>
+    </mobility_configuration>
+  </mobility_configurations>
+  <session_origin lat="47.579166412353516" lon="-122.13232421875" alt="2.0" scale="150.0"/>
+  <session_options>
+    <configuration name="controlnet" value=""/>
+    <configuration name="controlnet0" value=""/>
+    <configuration name="controlnet1" value=""/>
+    <configuration name="controlnet2" value=""/>
+    <configuration name="controlnet3" value=""/>
+    <configuration name="controlnet_updown_script" value=""/>
+    <configuration name="enablerj45" value="1"/>
+    <configuration name="preservedir" value="0"/>
+    <configuration name="enablesdt" value="0"/>
+    <configuration name="sdturl" value="tcp://127.0.0.1:50000/"/>
+    <configuration name="ovs" value="0"/>
+    <configuration name="platform_id_start" value="1"/>
+    <configuration name="nem_id_start" value="1"/>
+    <configuration name="link_enabled" value="1"/>
+    <configuration name="loss_threshold" value="30"/>
+    <configuration name="link_interval" value="1"/>
+    <configuration name="link_timeout" value="4"/>
+    <configuration name="mtu" value="0"/>
+    <configuration name="checksums" value="0"/>
+  </session_options>
+  <session_metadata>
+    <configuration name="shapes" value="[]"/>
+    <configuration name="edges" value="[]"/>
+    <configuration name="hidden" value="[]"/>
+    <configuration name="canvas" value="{&quot;gridlines&quot;: true, &quot;canvases&quot;: [{&quot;id&quot;: 1, &quot;wallpaper&quot;: null, &quot;wallpaper_style&quot;: 1, &quot;fit_image&quot;: false, &quot;dimensions&quot;: [1000, 750]}]}"/>
+  </session_metadata>
+</scenario>
